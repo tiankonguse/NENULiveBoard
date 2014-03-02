@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.7.0_45">
 		<attributes>
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
@@ -13,5 +13,15 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="lib" path="/home/tiankonguse/app/commons-dbcp-1.4/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="/home/tiankonguse/app/commons-dbcp-1.4/commons-dbcp-1.4-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/tiankonguse/app/commons-dbcp-1.4/commons-dbcp-1.4-sources.jar"/>
+	<classpathentry kind="lib" path="/home/tiankonguse/app/pc2-9.2.3/lib/activation.jar"/>
+	<classpathentry kind="lib" path="/home/tiankonguse/app/pc2-9.2.3/lib/mailapi.jar"/>
+	<classpathentry kind="lib" path="/home/tiankonguse/app/pc2-9.2.3/lib/mclb.jar"/>
+	<classpathentry kind="lib" path="/home/tiankonguse/app/pc2-9.2.3/lib/pc2.jar"/>
+	<classpathentry kind="lib" path="/home/tiankonguse/app/pc2-9.2.3/lib/smtp.jar"/>
+	<classpathentry kind="lib" path="/home/tiankonguse/app/eclipse_plug/plugins/javax.servlet_3.0.0.v201112011016.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

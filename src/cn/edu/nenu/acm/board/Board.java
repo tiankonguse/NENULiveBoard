@@ -85,7 +85,7 @@ public class Board {
 			Properties p = new Properties();
 			p.setProperty("driverClassName", "com.mysql.jdbc.Driver");
 			p.setProperty("url", "jdbc:mysql://localhost:3306/ContestBoard");
-			p.setProperty("password", "i love shuxiao");
+			p.setProperty("password", "K8cHdMfaYC9Qcx3q");
 			p.setProperty("username", "ContestBoard");
 			p.setProperty("maxActive", "2");
 			p.setProperty("maxIdle", "2");
