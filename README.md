@@ -1,7 +1,7 @@
 NENULiveBoard
 =============
 
-A Live ACM/ICPC Onsite Live Board Solution. Perfectly run during 2012 ACM-ICPC Asia Regional Contest (Changchun Site).
+A Live ACM/ICPC Onsite Live Board Solution. Perfectly run during 2014 ACM-ICPC NENU campus Contest.
 
 This project is base on object oriented Javascript and J2EE programing.
 
@@ -11,20 +11,16 @@ By using some features of CSS3 and HTML5, users will get a very well exprences o
 
 Animation is also available for showing the changes of the ranking.
 
-Preview: http://acm.nenu.edu.cn/BoardWeb/
-
 License
 =============
 GPLv3
 
-Additional requirement (optional): you are welcome not to remove the links to http://acm.nenu.edu.cn and http://winguse.com.
+Additional requirement (optional): you are welcome not to remove the links to http://tiankonguse.com.
 You are also welcome not to remove some of the last line of the code.
 
 For More
 =============
-Read system_guide.docx (or pdf)
-
-video description (Chinese): http://v.youku.com/v_show/id_XNDY3MTQwNzUy.html
+Read system\_guide.docx (or pdf)
 
 Exporting Data to ICPC
 =============
@@ -37,8 +33,8 @@ to
 Then, edit the data to json format, and you will get something like this:
 
 var tn2id={"+18远古遗愿":"161940",
-"ALPC_ACOnFingers":"161713",
-"ALPC_Tour_de_Force":"161714",...};
+"ALPC\_ACOnFingers":"161713",
+"ALPC\_Tour\_de\_Force":"161714",...};
 
 Thridly, paste the the code above and the code following into Chrome javascript console,
 you will get the final exporting xml.
@@ -54,3 +50,9 @@ for(var t=board.headTeam.nextTeam;t!=board.tailTeam;t=t.nextTeam){
 	result+='<Standing LastProblemTime="'+t.lastAccptedTime+'" ProblemsSolved="'+t.accepted+'" Rank="'+t.teamRank+'" ReservationID="'+tn2id[t.en.xss()]+'" TeamName="'+t.en.xss()+'" TotalTime="'+t.penalty+'"/>';
 }
 </code></pre>
+
+
+References
+=============
+this project is clone from https://github.com/winguse/NENULiveBoard .
+more read [readme](<readme.md>)
