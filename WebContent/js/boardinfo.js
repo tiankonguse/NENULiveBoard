@@ -1,20 +1,20 @@
 var cs_boardinfo = {
 	"message" : "Information fetched successfully.",
 	"teams" : {
-		"team1" : {
+		"tiankonguse" : {
 			"sid" : "_1",
 			"teamMembers" : [ {
-				"cn" : "team1",
-				"en" : "Yan Kong",
+				"cn" : "袁小康",
+				"en" : "tiankonguse",
 				"m" : true
 			}],
-			"cn" : "team1",
 			"coach" : {
-				"cn" : "team1",
-				"en" : "Yan Kong",
+				"cn" : "tiankonguse",
+				"en" : "tiankonguse",
 				"m" : true
 			},
-			"en" : "team1",
+			"cn" : "tiankonguse",
+			"en" : "tiankonguse",
 			"girlsTeam" : false,
 			"offical" : false
 		},
