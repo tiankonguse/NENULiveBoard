@@ -23,12 +23,19 @@ For More
 Read system\_guide.docx (or pdf)
 
 由于开发环境是eclipse-j2ee。所以使用者最好也使用eclipse-j2ee来测试这个项目。
+
 新建项目后，会提示几个包不存在的错误。
+
 这些jar包需要自己导入。
+
 具体方法是右击项目，properties,Java Build Path ,点击标签Libraries, Add JARs ,点击lib.
+
 这个lib目录里面有三个jar库，分别是pc2,dbcp,javax.servlet.
+
 然后建议使用eclipse下载tomcat，这样比较方便。
 
+
+pc2 使用说明参考[这里](pc2_readme.md)
 
 Exporting Data to ICPC
 =============
