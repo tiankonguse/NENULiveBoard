@@ -4,7 +4,6 @@ final long LOAD_TIME;
 session.setAttribute("loadTime",LOAD_TIME=new Long(new Date().getTime()));
 session.removeAttribute("since");
 //TODO 要不要判断频繁刷新的问题？
-
 %>
 <!DOCTYPE html>
 <html>

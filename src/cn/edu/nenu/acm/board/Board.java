@@ -21,20 +21,20 @@ import org.apache.commons.dbcp.BasicDataSourceFactory;
 public class Board {
 
 	public final static int RUNSTATUS_YES = 0;
-	//public final static int RUNSTATUS_FIRST_BLOOD = 1;
-	//2012-09-26 决定不在数据库里面存是不是FIRST BLOOD，原因是，如果发生Rejudge都话，FB得完全重新判断，而PC^2是从来不会告诉你什么时候开始Rejudge的。也就是说，实现都时候，我可能需要每次都判断全部数据，最简单和复杂度可以接受都，都要写个堆来维护，所以，这部分运算了扔给Javascript。
+	// public final static int RUNSTATUS_FIRST_BLOOD = 1;
+	// 2012-09-26 决定不在数据库里面存是不是FIRST
+	// BLOOD，原因是，如果发生Rejudge都话，FB得完全重新判断，而PC^2是从来不会告诉你什么时候开始Rejudge的。也就是说，实现都时候，我可能需要每次都判断全部数据，最简单和复杂度可以接受都，都要写个堆来维护，所以，这部分运算了扔给Javascript。
 	public final static int RUNSTATUS_PEDDING = 2;
 	public final static int RUNSTATUS_NO = 3;
 	public final static int RUNSTATUS_DELETED = -1;
 	public final static int RUNSTATUS_UNDEFINE = -2;
-	
+
 	/**
 	 * 考虑ClearPedding的时候，时间会比较长，
-	 * 如果那个时候刚刚好又唤醒了轮询进程，那么很可能一次clearPedding的操作会变成两次查询材质的，
-	 * 现在用这个信号量解决这个问题。
+	 * 如果那个时候刚刚好又唤醒了轮询进程，那么很可能一次clearPedding的操作会变成两次查询材质的， 现在用这个信号量解决这个问题。
 	 */
-	public final static Object dbMutex=new Object();
-	
+	public final static Object dbMutex = new Object();
+
 	/**
 	 * 数据库链接，使用连接池
 	 */
@@ -55,7 +55,7 @@ public class Board {
 	 * 如果一旦密集提交，那么缓存就可能失去意义；<br>
 	 * 如果提交很稀疏，网络负载也会变大。
 	 */
-	public static int statusCacheIntervalCount=30;
+	public static int statusCacheIntervalCount = 30;
 	/**
 	 * 缓存刷新周期，每隔这样一个时间就更新一次cache，并且，如果确实获得新数据了，就通知等待的ajax
 	 */
@@ -63,12 +63,12 @@ public class Board {
 	/**
 	 * 最大同时在线的push ajax数量，因为push的时候，连接是保持的，先定个上界，保证不会503
 	 */
-	public static int maxActivePushAjaxConnection=1000;
+	public static int maxActivePushAjaxConnection = 1000;
 	/**
-	 * 封榜时间（分钟） 
+	 * 封榜时间（分钟）
 	 */
-	public static int freezeTime=60*4;
-	
+	public static int freezeTime = 60 * 4;
+
 	/**
 	 * 初始化数据库连接池
 	 */
@@ -85,7 +85,7 @@ public class Board {
 			Properties p = new Properties();
 			p.setProperty("driverClassName", "com.mysql.jdbc.Driver");
 			p.setProperty("url", "jdbc:mysql://localhost:3306/ContestBoard");
-			p.setProperty("password", "i love shuxiao");
+			p.setProperty("password", "K8cHdMfaYC9Qcx3q");
 			p.setProperty("username", "ContestBoard");
 			p.setProperty("maxActive", "2");
 			p.setProperty("maxIdle", "2");
@@ -104,6 +104,7 @@ public class Board {
 
 	/**
 	 * 从数据连接池里获得数据库连接
+	 * 
 	 * @return
 	 * @throws SQLException
 	 */
@@ -120,4 +121,4 @@ public class Board {
 	}
 
 }
-/*winguse love shuxiao*/
+/* winguse love shuxiao */
